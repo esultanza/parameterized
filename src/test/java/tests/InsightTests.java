@@ -13,7 +13,7 @@ public class InsightTests {
 
 
     @Test
-    @Tag("insight_test")
+    @Tag("insight_tag")
     void paramitrizedStringTest() {
         String item = System.getProperty("item", "reminisce"); // from terminal, gradle insight_test -Dbbb=reminisce
         logger.info("\nitem = " + item);
