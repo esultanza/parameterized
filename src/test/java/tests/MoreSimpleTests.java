@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
-@Tag("asdadas_more_simple_tests")
+@Tag("just_equal")
 public class MoreSimpleTests {
 
     @Test
@@ -15,7 +15,7 @@ public class MoreSimpleTests {
     }
 
     @Test
-    @Tag("not_you")
+    @Tag("negative_equals")
     void superNegativeTest() {
         assertEquals(2, 3);
     }

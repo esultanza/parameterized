@@ -5,15 +5,15 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@Tag("simple_tests")
+@Tag("math_tests")
 public class SimpleTests {
 
     @Test
     void positiveTest() {
-        int a = 2;
-        int b = 3;
+        int a = 3;
+        int b = 2;
 
-        assertEquals(a * b, 6);
+        assertEquals(a - b, 1);
     }
 
     @Test
@@ -21,6 +21,6 @@ public class SimpleTests {
         int a = 2;
         int b = 3;
 
-        assertEquals(a * b, 7, "a * b should be 6, not 7");
+        assertEquals(a * b, 1, "a * b should be 6, not 1");
     }
 }

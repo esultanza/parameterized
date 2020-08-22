@@ -25,13 +25,12 @@ tasks.withType(JavaCompile) {
 
 tasks.withType(Test) {
     systemProperties = System.properties
-
 }
 
-task simple_tests(type: Test) {
+task basic_tests(type: Test) {
     useJUnitPlatform {
-        includeTags 'simple_tests'
-        includeTags 'asdadas_more_simple_tests'
-        excludeTags 'not_you'
+        includeTags 'math_tests'
+        includeTags 'just_equal'
+        excludeTags 'negative_equals'
     }
 }
