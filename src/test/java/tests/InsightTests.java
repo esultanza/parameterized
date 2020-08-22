@@ -15,7 +15,7 @@ public class InsightTests {
     @Test
     @Tag("insight_tag")
     void paramitrizedStringTest() {
-        String item = System.getProperty("item", "thunder"); // from terminal, gradle insight_test -Dbbb=reminisce
+        String item = System.getProperty("item", "reminisce"); // from terminal, gradle insight_test -Dbbb=reminisce
         logger.info("\nitem = " + item);
 
         assertEquals("reminisce", item, "item = " + item);
