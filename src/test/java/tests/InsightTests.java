@@ -9,13 +9,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @Tag("basic_tests")
 public class InsightTests {
-    static Logger logger = LoggerFactory.getLogger(ParametrizedTests.class);
+    static Logger logger = LoggerFactory.getLogger(InsightTests.class);
 
 
     @Test
     @Tag("insight_test")
     void paramitrizedStringTest() {
-        String item = System.getProperty("item", "thunder"); // from terminal, gradle insight_test -may=reminisce
+        String item = System.getProperty("item", "reminisce"); // from terminal, gradle insight_test -Dbbb=reminisce
         logger.info("\nitem = " + item);
 
         assertEquals("reminisce", item, "item = " + item);
