@@ -37,7 +37,7 @@ testLogging {
 
 task insight_test(type: Test) {
     useJUnitPlatform {
-        includeTags 'insight_test'
+        includeTags 'insight_tag'
     }
 } 
 
